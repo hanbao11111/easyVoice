@@ -2,6 +2,7 @@ import fs from 'fs/promises'
 import { EdgeSchema } from '../schema/generate'
 import { EdgeTTS } from '../lib/node-edge-tts/edge-tts-fixed'
 import { fileExist, readJson, safeRunWithRetry } from '../utils'
+import { EDGE_TTS_PROXY } from '../config'
 
 export async function runEdgeTTS({
   text,
@@ -22,6 +23,7 @@ export async function runEdgeTTS({
     rate,
     volume,
     timeout: 30_000,
+    proxy: EDGE_TTS_PROXY,
   })
   console.log(`run with nodejs edge-tts service...`)
   if (outputType === 'file') {

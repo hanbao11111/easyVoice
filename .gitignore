@@ -10,3 +10,4 @@ run.test.sh
 run.prod.sh
 **test**.sh
 scripts/docker-compose.yml
+proxy_pool.json

@@ -67,6 +67,9 @@ class EdgeTTS {
     this.wordBoundary = wordBoundary
     this.sentenceBoundary = sentenceBoundary
     this.proxy = proxy ?? ''
+    if (this.proxy) {
+      console.log(`[EdgeTTS] Using proxy: ${this.proxy}`)
+    }
     this.rate = rate
     this.pitch = pitch
     this.volume = volume

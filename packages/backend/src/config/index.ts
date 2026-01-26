@@ -39,3 +39,6 @@ export const LIMIT_TEXT_LENGTH_ERROR_MESSAGE = process.env.LIMIT_TEXT_LENGTH_ERR
 export const USE_HELMET = process.env.USE_HELMET === 'true' || false
 export const USE_LIMIT = process.env.USE_LIMIT === 'true' || false
 export const DIRECT_GEN_LIMIT = process.env.DIRECT_GEN_LIMIT || 200
+
+// Edge TTS 代理配置
+export const EDGE_TTS_PROXY = process.env.EDGE_TTS_PROXY || ''
